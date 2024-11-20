@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/portapapeles.png">
+  <title>Tareas Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tareas</h1>
+    <div class="input-group">
+      <input type="text" id="taskDescription" placeholder="Descripción de la tarea" />
+      <button id="addTaskBtn">Agregar Tarea</button>
+    </div>
+    <ul id="taskList"></ul>
+    <button id="deleteTaskBtn">Eliminar</button>
+  </div>
+
+  <div class="editar" id="editModal">
+    <div class="editar-content">
+      <h2>Editar Tarea</h2>
+      <input type="text" id="editTaskDescription" placeholder="Nueva descripción" />
+      <button id="saveEditBtn">Guardar Cambios</button>
+      <button id="cancelEditBtn">Cancelar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
